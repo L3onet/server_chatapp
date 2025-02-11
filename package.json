@@ -1,0 +1,16 @@
+{
+  "name": "chatapp-server",
+  "version": "0.0.1",
+  "description": "ChatApp Server",
+  "main": "index.js",
+  "author": "Leonel Gonzalez Vidales",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  }
+}
