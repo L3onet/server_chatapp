@@ -4,7 +4,7 @@ import { initSocketServer } from "./utils/index.js";
 import cors from "cors";
 import morgan from "morgan";
 import bodyParser from "body-parser";
-import { authRoutes, userRoutes  } from "./routes/index.js";
+import { authRoutes, userRoutes, chatRoutes, chatMessageRoutes   } from "./routes/index.js";
 
 
 const app = express();
@@ -28,5 +28,7 @@ app.use(morgan("dev"));
 // Configure routings
 app.use("/api", authRoutes);
 app.use("/api", userRoutes);
+app.use("/api", chatRoutes);
+app.use("/api", chatMessageRoutes);
 
 export { server };
